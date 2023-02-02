@@ -76,11 +76,7 @@ export default class Main extends React.Component {
                         onFacesDetected={this.onFacesDetected}
                         onFacesDetectionError={this.onFacesDetectionError}
                     />
-                    {
-                        this.state.faces.map(face => {
-                            return <Filter1 key={face.faceID} face={face} />
-                        })
-                    }
+                    
                 </View>
             </View>
         )
